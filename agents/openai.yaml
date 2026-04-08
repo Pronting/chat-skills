@@ -1,0 +1,7 @@
+interface:
+  display_name: "Chat Skills"
+  short_description: "Coach respectful dating chat, invites, and signal-reading"
+  default_prompt: "Use $chat-skills to analyze the current dating conversation, identify the stage and signals, and draft three natural reply options."
+
+policy:
+  allow_implicit_invocation: true
