@@ -1,7 +1,7 @@
 interface:
-  display_name: "Chat Skills"
-  short_description: "Coach respectful dating chat, invites, and signal-reading"
-  default_prompt: "Use $chat-skills to analyze the current dating conversation, identify the stage and signals, and draft three natural reply options."
+  display_name: "聊天技能"
+  short_description: "分析恋爱聊天阶段、信号和更自然的回复"
+  default_prompt: "使用 $chat-skills 分析当前和女生的聊天，判断阶段与信号，并给出几版更自然、像真人会发的回复。"
 
 policy:
   allow_implicit_invocation: true
