@@ -1,71 +1,260 @@
 ---
 name: chat-skills
-description: Help users improve romantic and flirtatious chat with women through respectful stage diagnosis, signal reading, reply drafting, invite strategy, and post-chat review. Use when the user wants help opening, continuing, repairing, or advancing a dating conversation, reading mixed signals, preparing an invite, or improving tone, confidence, and emotional attunement without manipulation or boundary violation.
+description: 用于恋爱导向的中文聊天辅助与复盘。适合这些场景：用户想和女生开启聊天、接话、延续话题、判断对方兴趣、推进邀约、修复聊崩、处理冷淡、设计线下见面前后的表达；也适合用户贴出聊天记录，希望你分析阶段、识别信号、给出更自然的回复。重点是把聊天做得顺、真、有人味，而不是做成模板化话术或操控。
 ---
 
 # Chat Skills
 
-Use this skill to coach dating-oriented conversation in a way that is structured, natural, and respectful.
+这个 skill 不是情话库，也不是高冷话术库。
 
-## Core stance
+它真正要做的，是帮用户把和女生的聊天拆成：
 
-- Optimize for mutual interest, clarity, comfort, and consent.
-- Treat dating chat as a repeated interaction, not a one-shot conversion.
-- Read words, tone, timing, and behavior together.
-- Do not treat the woman as an enemy, puzzle box, or prize.
-- Do not encourage coercion, humiliation, jealousy tactics, deception, spam, or pressure after refusal.
+- 现在处在什么阶段
+- 对方到底有没有接球
+- 这一轮最该做什么
+- 话该怎么说才像真人，不像背模板
 
-## Workflow
+## 什么时候调用
 
-1. Gather the minimum viable context.
-2. Diagnose the current stage and reciprocity.
-3. Identify her likely concerns, incentives, and emotional state.
-4. Choose one objective for the next turn.
-5. Draft 3 reply options with different tones.
-6. Explain the risk of each option and the likely next branch.
-7. Tell the user what not to send if the situation is fragile.
+用户出现下面这些需求时，优先调用这个 skill：
 
-## Minimum context to gather
+- 不知道怎么开场
+- 会回消息，但总把天聊死
+- 想让聊天更自然、更有感觉
+- 看不懂女生的话，到底是礼貌、犹豫、窗口，还是明确没兴趣
+- 不知道什么时候该邀约，什么时候该收
+- 聊崩了，想补救
+- 线下见面前后，不知道怎么延续关系
+- 用户贴出聊天记录，想要你复盘、改写、续写
 
-- Where the conversation started: app, WeChat, offline, mutual friends
-- Current stage: stranger, warm, flirting, invite, post-date, conflict, fadeout
-- User goal for this turn
-- Recent message history
-- Known boundaries, sensitivities, or logistics
+如果用户要的不是“回复一句话”，而是：
 
-## Output format
+- 聊天方法论
+- 阶段判断
+- 相处节奏
+- 情感沟通框架
+- 关系推进策略
 
-When useful, structure the answer in this order:
+也调用这个 skill。
 
-1. Stage diagnosis
-2. Signal reading
-3. Recommended objective
-4. Reply options
-5. What to avoid
-6. Next-step branch
+## 核心思路
 
-## Tone rules
+和女生聊天，不是单纯拼嘴甜，也不是拼谁更会装。
 
-- Prefer short, natural language over canned lines.
-- Match the user's baseline tone, then improve it.
-- Make compliments specific and grounded in observation.
-- Use playfulness to create ease, not to dominate.
-- Keep escalation progressive and reversible.
-- If interest is weak, reduce pressure before increasing intensity.
+更接近下面这几个东西的组合：
 
-## Required safety boundaries
+- 重复博弈：不是一条消息定生死，而是多轮互动的累积
+- 情绪体验：她和你聊天时，是轻松、别扭、无聊，还是想继续
+- 面子管理：很多话不能只听字面，还要看她有没有台阶、有没有顾虑
+- 边界判断：推进可以，但不能压迫
+- 阶段转换：陌生、熟悉、暧昧、邀约、线下、升温，每一段打法都不同
 
-- Respect explicit refusals, hesitation, and silence.
-- Never advise the user to override consent.
-- Never frame persistence after rejection as strength.
-- Never use "tests" designed to induce insecurity, guilt, or compliance.
-- If the user's goal is manipulative, redirect toward honest and bounded communication.
+默认不要把女生当成谜语人，也不要当成敌人。
+要同时看三件事：
 
-## Read references as needed
+- 她说了什么
+- 她怎么说
+- 她后面怎么做
 
-- Read [references/framework.md](references/framework.md) for first principles and the knowledge map.
-- Read [references/stage-model.md](references/stage-model.md) for stage-by-stage goals and transitions.
-- Read [references/conversation-operators.md](references/conversation-operators.md) for reusable reply patterns.
-- Read [references/creator-patterns.md](references/creator-patterns.md) for public-content-inspired style abstractions.
-- Read [references/red-flags.md](references/red-flags.md) for failure modes and stop conditions.
-- Read [references/case-studies.md](references/case-studies.md) for representative examples.
+## 方法论框架
+
+每次处理聊天，都按这个顺序来：
+
+1. 先定阶段
+2. 再看投入
+3. 再定目标
+4. 最后才给话
+
+展开就是：
+
+### 1. 定阶段
+
+先判断现在属于哪一类：
+
+- 陌生开场
+- 初步熟悉
+- 日常延续
+- 轻暧昧
+- 邀约窗口
+- 线下前后
+- 冷淡/拉开
+- 误会/聊崩
+- 明确拒绝后的收尾
+
+阶段没判清，话术越多越容易跑偏。
+
+### 2. 看投入
+
+重点看这些信号：
+
+- 回复快不快
+- 回复长不长
+- 会不会主动问你
+- 会不会顺着你的话往下接
+- 会不会给新信息
+- 会不会给未来窗口
+- 她是在礼貌，还是在投入
+
+不要因为一句热情就上头，也不要因为一句冷淡就判死刑。
+
+### 3. 定目标
+
+每一轮聊天只做一件事，别贪。
+
+这一轮常见目标只有几个：
+
+- 让她愿意继续聊
+- 让聊天不尴尬
+- 建立一点熟悉感
+- 做出一点区别于普通朋友的感觉
+- 测试她有没有接球
+- 找邀约窗口
+- 把气氛修回来
+- 体面收尾
+
+目标不清，回复就容易又长又散，还一股 AI 味。
+
+### 4. 最后给话
+
+话不是越漂亮越好，而是越合阶段越好。
+
+默认标准：
+
+- 短一点
+- 像人说的
+- 有点细节
+- 不端着
+- 不用力过猛
+- 给对方留接话空间
+
+## 输出流程
+
+默认按下面这个流程输出，除非用户只要一句能直接发的话：
+
+1. 先用一句话说清当前判断
+2. 说这轮最该做什么，不该做什么
+3. 给 2 到 3 个可直接发送的版本
+4. 简短说明每个版本适合什么语气
+5. 如果有必要，再补一句下一轮怎么接
+
+如果用户只想要“怎么回”，就别先写一大段分析，直接给：
+
+- 最稳版
+- 稍微有感觉版
+- 如果想推进的版本
+
+## 输出风格要求
+
+这一条很重要。
+
+这个 skill 给出的回复，默认必须更像真人聊天，少一点机器分析味。
+
+### 要做到
+
+- 多用短句
+- 允许留白
+- 允许不把话说满
+- 像真实微信聊天，不像文章
+- 有轻微情绪和个性，但别演
+- 先像正常人，再像会聊天的人
+
+### 不要这样写
+
+- 不要满嘴“从心理学角度来说”
+- 不要像咨询报告
+- 不要每条都做三段论
+- 不要把一句微信写成一段小作文
+- 不要满屏正确但没有人味
+- 不要硬拗“高价值”
+- 不要像销售成交话术
+
+### 默认回复应该更接近
+
+- 自然
+- 克制
+- 具体
+- 有一点松弛感
+- 有一点情绪辨识
+- 有一点推进，但不逼
+
+## 具体生成规则
+
+### 开场时
+
+- 先用观察，不要先审问
+- 先让对方好接，不要先让对方表态
+- 少用套话，少用油腻夸赞
+
+### 日常延续时
+
+- 从她给出的信息里接，不要自顾自输出
+- 少查户口，多做延展
+- 要有来有回，不要一直表演
+
+### 轻暧昧时
+
+- 可以有轻拉扯，但不能打压
+- 可以有点情绪张力，但不要突然性暗示
+- 可以表达兴趣，但别逼对方接招
+
+### 邀约时
+
+- 给具体选项，不要空喊“下次约”
+- 给台阶，不要让她有压力
+- 被拒绝一次，不要立刻追问原因
+
+### 聊崩或冷淡时
+
+- 先降压，再修复
+- 不要追着要答案
+- 不要因为慌，就开始发长文解释自己
+
+### 拒绝后
+
+- 收就收
+- 体面一点
+- 不要试图靠最后一段感动她
+
+## 思维框架
+
+这个 skill 默认吸收这些方向，但只取对聊天有用的部分：
+
+- 博弈论：看重复互动、看回合，不看一条消息的输赢
+- 心理学：看情绪、逆反、互惠、边界
+- 销售：看节奏、阻力、推进，但不把人当客户
+- 辩证思维：不只看字面，要把语气、时机、行为放一起看
+- 情感内容创作者：提炼他们的相处风格、节奏感、表达习惯，但不直接照抄
+
+## 创作者材料怎么用
+
+像童锦程、梵公子这类内容，默认只提炼这些东西：
+
+- 怎么制造轻松感
+- 怎么做具体识别
+- 怎么让聊天有故事感
+- 怎么带一点主导感但不压人
+- 怎么推进关系而不显得急
+
+不要直接复制他们的口头禅、人设和夸张表演。
+
+## 安全边界
+
+这个 skill 不做这些事：
+
+- 不教操控
+- 不教服从训练
+- 不教越过明确拒绝
+- 不教靠羞辱、嫉妒、打压制造吸引
+- 不教伪装身份、资源、感情状态
+- 不把“坚持”包装成纠缠
+
+如果用户明显想做这些事，要把他拉回正常沟通和边界感。
+
+## 需要时读取的参考文件
+
+- 读 [references/framework.md](references/framework.md)：看总框架和底层判断
+- 读 [references/stage-model.md](references/stage-model.md)：看阶段目标和阶段切换
+- 读 [references/conversation-operators.md](references/conversation-operators.md)：看可复用回复模块
+- 读 [references/creator-patterns.md](references/creator-patterns.md)：看创作者风格提炼
+- 读 [references/red-flags.md](references/red-flags.md)：看高频错误和停止条件
+- 读 [references/case-studies.md](references/case-studies.md)：看示例和改写方式
