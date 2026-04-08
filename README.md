@@ -2,32 +2,44 @@
 
 面向国男的情感聊天指南。
 
-帮不会聊天的直男建立更自然的聊天节奏、情绪判断和关系推进感。
+这是一个面向 AI 工具的 skill 仓库，目标是把恋爱聊天拆成可分析、可复用、可继续扩展的框架。
 
-## What Is This
+## Scope
 
-`chat-skills` 是一个面向 AI 工具的 skills 仓库，聚焦情感聊天、关系判断和对话表达优化。
+仓库当前聚焦这些问题：
 
-它适合这些场景：
+- 怎么开启一段不尴尬的聊天
+- 怎么把天聊顺，而不是聊成审讯
+- 怎么判断对方的投入、边界和窗口
+- 怎么在合适的时候推进邀约
+- 怎么在冷淡、误会或拒绝后体面收尾
 
-- 不知道怎么开启聊天
-- 不会接话，容易把天聊死
-- 想推进关系，但节奏总是出问题
-- 想提升表达，而不是背模板硬聊
+## Principles
 
-## Goal
+这个仓库不把聊天理解为操控，而理解为：
 
-这个仓库的目标不是教人操控别人，而是帮助用户：
+- 重复互动
+- 情绪体验
+- 关系判断
+- 节奏推进
+- 边界管理
 
-- 更自然地聊天
-- 更准确地判断关系阶段
-- 更尊重边界地表达兴趣
-- 少犯低情商、用力过猛和自我感动式错误
+## Structure
 
-## Planned Contents
+```text
+.
+├── SKILL.md
+├── agents/
+│   └── openai.yaml
+└── references/
+    ├── framework.md
+    ├── stage-model.md
+    ├── conversation-operators.md
+    ├── creator-patterns.md
+    ├── red-flags.md
+    └── case-studies.md
+```
 
-- 情感聊天 skill 入口
-- 常见聊天场景拆解
-- 回复思路和反例
-- 关系推进与边界判断
-- 面向 Claude Code / OpenClaw 等工具的兼容组织方式
+## Compatibility
+
+当前结构按通用 skill 规范组织，方便后续接入 Claude Code、OpenClaw 等支持 skills 的代理工具。
