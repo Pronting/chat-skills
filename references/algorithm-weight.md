@@ -5,7 +5,7 @@
 ---
 
 
-## 一、 全局参数字典与跨学科底层映射
+## 一、全局参数字典与跨学科底层映射
 
 > 本表定义了系统运行的基础核心变量（所有参数取值范围通常在 `0.0 - 1.0` 之间，视具体情境加权）。在分析聊天记录时，系统需首先对这些变量进行量化赋值。
 
@@ -39,13 +39,13 @@
 
 ## 核心数据量化与标定协议 (Data Quantization & Calibration SOP)
 
-* *依赖说明：* 严格按照里面的「三大原型」与「0.05微调法则」进行参数量化。
-- 读 [references/data-quantization-sop.md](references/data-quantization-sop.md)：阅读21个参数的值应该怎样界定
+- **依赖说明：** 严格按照里面的「三大原型」与「0.05微调法则」进行参数量化。
+- 读 [references/data-quantization-sop.md](references/data-quantization-sop.md)：阅读 21 个参数的值应该怎样界定
 
 
 
 
-## 二、 十大领域底层公式库 
+## 二、十大领域底层公式库
 
 ### 领域 1：进化心理学 (基础吸引力)
 **公式 1：综合吸引力基数 (Base_Attraction)**
@@ -89,7 +89,7 @@
 
 ---
 
-## 三、 核心实战决策逻辑流 (Core Decision Engines)
+## 三、核心实战决策逻辑流 (Core Decision Engines)
 
 > 本模块为 AI 执行管线的“大脑”，整合跨学科推演，附带严格的**触发阈值**。
 
@@ -127,7 +127,7 @@
 
 ---
 
-## 四、 专家组高级增量推论 (Advanced Deductions)
+## 四、专家组高级增量推论 (Advanced Deductions)
 
 > 基于动态系统演化出的补充测算，用于复杂和极端局势的判定。
 
