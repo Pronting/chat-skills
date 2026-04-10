@@ -1,6 +1,6 @@
 # 核心算法加权处理模块
 
-本模块将恋爱博弈中的感性体验拆解为多维度的底层参数，并通过 10 大领域的跨学科交叉验证，构建出逻辑自洽的决策公式库。
+本模块将恋爱博弈中的感性体验拆解为多维度的底层参数，通过 10 大领域的跨学科交叉验证，构建出逻辑自洽的决策公式库
 
 ---
 
@@ -40,7 +40,7 @@
 ## 核心数据量化与标定协议 (Data Quantization & Calibration SOP)
 
 - **依赖说明：** 严格按照里面的「三大原型」与「0.05微调法则」进行参数量化。
-- 读 [references/data-quantization-sop.md](references/data-quantization-sop.md)：阅读 21 个参数的值应该怎样界定
+- 读 ：[references/data-quantization-sop.md](./data-quantization-sop.md) 阅读 21 个参数的值应该怎样界定
 
 
 
